@@ -1,2 +1,8 @@
 .idea/
 teamcity_docker.iml
+
+# Include only information about projects configurations
+/datadir/*
+!/datadir/config/
+/datadir/config/*
+!/datadir/config/projects
