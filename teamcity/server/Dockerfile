@@ -1,4 +1,4 @@
-FROM jetbrains/teamcity-server
+FROM jetbrains/teamcity-server:2018.1.2
 
 RUN apt-get -q update \
     && apt-get -q install -y --no-install-recommends \
