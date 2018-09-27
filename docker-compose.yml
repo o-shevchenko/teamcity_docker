@@ -6,11 +6,11 @@ services:
     ports:
     - 8111:8111
     volumes:
-    - '/root/datadir:/data/teamcity_server/datadir'
+    - '/root/teamcity_docker/datadir:/data/teamcity_server/datadir'
 
   agent:
     image: 'jetbrains/teamcity-agent'
     environment:
     - SERVER_URL=server:8111
     volumes:
-    - '/root/datadir:/data/teamcity_server/datadir'
+    - '/root/teamcity_docker/datadir:/data/teamcity_server/datadir'
