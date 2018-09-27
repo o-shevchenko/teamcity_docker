@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uuid="4c580dc1-7a74-404f-936d-c8421a8196a1" xsi:noNamespaceSchemaLocation="http://www.jetbrains.com/teamcity/schemas/2018.1/project-config.xsd">
+  <name>Apache Hadoop</name>
+  <parameters />
+  <cleanup />
+</project>
+
