@@ -15,5 +15,5 @@ TeamCity server and agent to run unit tests for MapR Hadoop project
 
 
 ### Troubleshooting
-1. Unauthorized agents
+1. TeamCity agents can't be authorized
     - Clean "datadir" on host node before up docker containers
