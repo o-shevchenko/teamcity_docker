@@ -10,7 +10,7 @@
           <param name="goals" value="clean test" />
           <param name="maven.path" value="%teamcity.tool.maven.DEFAULT%" />
           <param name="pomLocation" value="pom.xml" />
-          <param name="runnerArgs" value="-fn -Dtest=org.apache.hadoop.yarn.**,org.apache.hadoop.registry.**,!org.apache.hadoop.yarn.sls.**" />
+          <param name="runnerArgs" value="-fn -Dtest=org.apache.hadoop.yarn.**,org.apache.hadoop.registry.**,!org.apache.hadoop.yarn.sls.** -Dmaven.test.failure.ignore=true" />
           <param name="teamcity.coverage.emma.include.source" value="true" />
           <param name="teamcity.coverage.emma.instr.parameters" value="-ix -*Test*" />
           <param name="teamcity.coverage.idea.includePatterns" value="*" />
