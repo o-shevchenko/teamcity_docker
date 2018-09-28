@@ -9,7 +9,9 @@ TeamCity server and agent to run unit tests for MapR Hadoop project
 ### Build and run
 1. cd teamcity_docker/teamcity/server
 2. docker build --rm -t mapr/teamcity-server .
-3. docker-compose up -d --scale agent=3 (specify needed number of agents)
+3. cd teamcity_docker/teamcity/agent
+4. docker build --rm -t mapr/teamcity-agent .
+5. docker-compose up -d --scale agent=3 (specify needed number of agents)
 
 
 ### Troubleshooting
