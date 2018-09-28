@@ -6,3 +6,4 @@ teamcity_docker.iml
 !/datadir/config/
 /datadir/config/*
 !/datadir/config/projects
+!/datadir/plugins/
