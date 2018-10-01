@@ -4,7 +4,7 @@ services:
   server:
     image: 'mapr/teamcity-server'
     ports:
-    - 8113:8111
+    - 8112:8111
     volumes:
     - '/root/teamcity_docker/datadir:/data/teamcity_server/datadir'
 
