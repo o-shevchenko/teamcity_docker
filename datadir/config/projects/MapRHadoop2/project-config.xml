@@ -2,7 +2,7 @@
 <project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uuid="e25d9746-f745-4552-98cd-29a915189064" xsi:noNamespaceSchemaLocation="http://www.jetbrains.com/teamcity/schemas/2018.1/project-config.xsd">
   <name>MapR Hadoop 2</name>
   <parameters>
-    <param name="env.MAPR_MAVEN_REPO" value="http://repository.mapr.com/maven" />
+    <param name="env.MAPR_MAVEN_REPO" value="http://repository.mapr.com/nexus/content/groups/mapr-public" />
   </parameters>
   <cleanup />
 </project>
