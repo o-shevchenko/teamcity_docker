@@ -10,7 +10,7 @@
           <param name="goals" value="clean test" />
           <param name="maven.path" value="%teamcity.tool.maven3_3%" />
           <param name="pomLocation" value="pom.xml" />
-          <param name="runnerArgs" value="-fn -Dtest=org.apache.hadoop.yarn.**,org.apache.hadoop.registry.**,!org.apache.hadoop.yarn.sls.**" />
+          <param name="runnerArgs" value="-fn -Dtest=org.apache.hadoop.mapred.**,org.apache.hadoop.mapreduce.** -Dmaven.test.failure.ignore=true" />
           <param name="target.jdk.home" value="%env.JDK_18_x64%" />
           <param name="teamcity.coverage.emma.include.source" value="true" />
           <param name="teamcity.coverage.emma.instr.parameters" value="-ix -*Test*" />

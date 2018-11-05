@@ -4,6 +4,18 @@
   <parameters>
     <param name="env.MAPR_MAVEN_REPO" value="http://repository.mapr.com/nexus/content/groups/mapr-public" />
   </parameters>
+  <project-extensions>
+    <extension id="PROJECT_EXT_3" type="OAuthProvider">
+      <parameters>
+        <param name="clientId" value="c14d260289e0ef2de850" />
+        <param name="defaultTokenScope" value="public_repo,repo,repo:status,write:repo_hook" />
+        <param name="displayName" value="GitHub.com" />
+        <param name="gitHubUrl" value="https://github.com/" />
+        <param name="providerType" value="GitHub" />
+        <param name="secure:clientSecret" value="zxx91ae4588dc60dd102e63c88b75d22e9ca8a15b8929da2f4e93496118a47a136afa2b2cb7709519fc775d03cbe80d301b" />
+      </parameters>
+    </extension>
+  </project-extensions>
   <cleanup />
 </project>
 
