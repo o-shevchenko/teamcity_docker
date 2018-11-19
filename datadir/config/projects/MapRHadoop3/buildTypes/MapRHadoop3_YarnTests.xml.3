@@ -7,11 +7,9 @@
     <build-runners>
       <runner id="RUNNER_4" name="build" type="Maven2">
         <parameters>
-          <param name="goals" value="clean install" />
-          <param name="maven.path" value="%teamcity.tool.maven3_3%" />
+          <param name="goals" value="package" />
+          <param name="maven.path" value="%teamcity.tool.maven.DEFAULT%" />
           <param name="pomLocation" value="pom.xml" />
-          <param name="runnerArgs" value="-Pdist -DskipTests -Dtar -Dmaven.javadoc.skip=true" />
-          <param name="target.jdk.home" value="%env.JDK_18_x64%" />
           <param name="teamcity.coverage.emma.include.source" value="true" />
           <param name="teamcity.coverage.emma.instr.parameters" value="-ix -*Test*" />
           <param name="teamcity.coverage.idea.includePatterns" value="*" />
@@ -25,7 +23,6 @@
           <param name="goals" value="test" />
           <param name="maven.path" value="%teamcity.tool.maven3_3%" />
           <param name="pomLocation" value="hadoop-yarn-project/pom.xml" />
-          <param name="runnerArgs" value="-fn" />
           <param name="target.jdk.home" value="%env.JDK_18_x64%" />
           <param name="teamcity.build.workingDir" value="hadoop-yarn-project" />
           <param name="teamcity.coverage.emma.include.source" value="true" />

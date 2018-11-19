@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<build-type xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uuid="4a8d8563-b67e-449f-a73f-50ee605d5630" xsi:noNamespaceSchemaLocation="http://www.jetbrains.com/teamcity/schemas/2018.1/project-config.xsd">
-  <name>YARN tests</name>
+<build-type xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uuid="0be35827-e785-4398-b9db-befc556a7f1f" xsi:noNamespaceSchemaLocation="http://www.jetbrains.com/teamcity/schemas/2018.1/project-config.xsd">
+  <name>Hadoop Common tests</name>
   <description />
   <settings>
     <parameters />
     <build-runners>
-      <runner id="RUNNER_4" name="build" type="Maven2">
+      <runner id="RUNNER_1" name="" type="Maven2">
         <parameters>
-          <param name="goals" value="clean install" />
+          <param name="goals" value="clean test" />
           <param name="maven.path" value="%teamcity.tool.maven3_3%" />
-          <param name="pomLocation" value="pom.xml" />
-          <param name="runnerArgs" value="-Pdist -DskipTests -Dtar -Dmaven.javadoc.skip=true" />
+          <param name="pomLocation" value="hadoop-common-project/pom.xml" />
           <param name="target.jdk.home" value="%env.JDK_18_x64%" />
+          <param name="teamcity.build.workingDir" value="hadoop-common-project" />
           <param name="teamcity.coverage.emma.include.source" value="true" />
           <param name="teamcity.coverage.emma.instr.parameters" value="-ix -*Test*" />
           <param name="teamcity.coverage.idea.includePatterns" value="*" />
@@ -20,14 +20,13 @@
           <param name="userSettingsSelection" value="userSettingsSelection:default" />
         </parameters>
       </runner>
-      <runner id="RUNNER_1" name="" type="Maven2">
+      <runner id="RUNNER_7" name="build" type="Maven2">
         <parameters>
-          <param name="goals" value="test" />
+          <param name="goals" value="clean install" />
           <param name="maven.path" value="%teamcity.tool.maven3_3%" />
-          <param name="pomLocation" value="hadoop-yarn-project/pom.xml" />
-          <param name="runnerArgs" value="-fn" />
+          <param name="pomLocation" value="pom.xml" />
+          <param name="runnerArgs" value="-Pdist -DskipTests -Dtar -Dmaven.javadoc.skip=true" />
           <param name="target.jdk.home" value="%env.JDK_18_x64%" />
-          <param name="teamcity.build.workingDir" value="hadoop-yarn-project" />
           <param name="teamcity.coverage.emma.include.source" value="true" />
           <param name="teamcity.coverage.emma.instr.parameters" value="-ix -*Test*" />
           <param name="teamcity.coverage.idea.includePatterns" value="*" />

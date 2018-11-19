@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uuid="e4241d2b-914d-4e97-8add-35b495ed6435" xsi:noNamespaceSchemaLocation="http://www.jetbrains.com/teamcity/schemas/2018.1/project-config.xsd">
   <name>MapR Hadoop 3</name>
-  <parameters />
+  <parameters>
+    <param name="MAPR_MAVEN_REPO" value="http://repository.mapr.com/maven" />
+  </parameters>
+  <project-extensions>
+    <extension id="PROJECT_EXT_2" type="OAuthProvider">
+      <parameters>
+        <param name="clientId" value="c14d260289e0ef2de850" />
+        <param name="defaultTokenScope" value="public_repo,repo,repo:status,write:repo_hook" />
+        <param name="displayName" value="GitHub.com" />
+        <param name="gitHubUrl" value="https://github.com/" />
+        <param name="providerType" value="GitHub" />
+        <param name="secure:clientSecret" value="zxx91ae4588dc60dd102e63c88b75d22e9ca8a15b8929da2f4e93496118a47a136afa2b2cb7709519fc775d03cbe80d301b" />
+      </parameters>
+    </extension>
+  </project-extensions>
   <cleanup />
 </project>
 

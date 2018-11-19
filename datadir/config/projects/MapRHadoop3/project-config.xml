@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uuid="e4241d2b-914d-4e97-8add-35b495ed6435" xsi:noNamespaceSchemaLocation="http://www.jetbrains.com/teamcity/schemas/2018.1/project-config.xsd">
   <name>MapR Hadoop 3</name>
-  <parameters />
+  <parameters>
+    <param name="env.MAPR_MAVEN_REPO" value="http://repository.mapr.com/maven" />
+  </parameters>
   <project-extensions>
     <extension id="PROJECT_EXT_2" type="OAuthProvider">
       <parameters>
